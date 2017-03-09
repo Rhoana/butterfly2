@@ -33,7 +33,7 @@ class Query():
     @property
     def mime_type(self):
         info_type = self.INPUT.INFO.FORMAT.VALUE
-        image_type = self.INUPT.IMAGE.FORMAT.VALUE
+        image_type = self.INPUT.IMAGE.FORMAT.VALUE
         # Use image type for data and info type for info
         file_type = image_type if self.is_data else info_type
         # Get the right mime tyep or use deafult for this class
